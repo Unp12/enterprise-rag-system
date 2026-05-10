@@ -1,0 +1,17 @@
+# Python / Backend
+__pycache__/
+*.py[cod]
+backend/venv/
+backend/chroma_db/
+backend/uploaded_docs/*
+!backend/uploaded_docs/.gitkeep
+backend/.env
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# OS Files
+.DS_Store
+Thumbs.db
