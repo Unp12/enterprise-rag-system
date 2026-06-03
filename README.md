@@ -64,5 +64,3 @@ This system utilizes JWT (JSON Web Tokens) and OAuth2 principles for secure ente
 👨‍💻 Developer
 Naga Poojith Ullam Full-Stack Developer & AI/ML Engineer
 
-
-Since you already have the backend running with the thresholds we discussed, this README will clearly explain your "80% practical" approach to anyone who visits your profile!
