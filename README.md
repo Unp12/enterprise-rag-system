@@ -53,8 +53,8 @@ enterprise-rag-system/
 │   ├── uploaded_docs/       # Document Storage
 │   └── requirements.txt     # Python Dependencies
 ├── frontend/
-│   ├── src/                 # React Components (Shadcn/UI)
-│   ├── tailwind.config.js   # UI Styling
+│   ├── src/                 # React Components
+│   |
 │   └── vite.config.js       # Build Tooling
 ├── Dockerfile               # Container Configuration
 └── .gitignore               # Environment Protection
