@@ -3,7 +3,7 @@
 A high-performance, privacy-focused Retrieval-Augmented Generation (RAG) workspace. This application allows users to upload enterprise documents (PDFs) and chat with them locally using **Ollama**, ensuring no data ever leaves the local environment.
 
 ## 🏗️ Architecture
-- **Frontend**: React.js (Vite) with Tailwind CSS & Shadcn/UI for a modern Enterprise UX.
+- **Frontend**: React.js for a modern Enterprise UX.
 - **Backend**: FastAPI for high-performance asynchronous API handling.
 - **AI Orchestration**: LangChain & `langchain_ollama`.
 - **LLM**: Llama 3 (via Ollama).
