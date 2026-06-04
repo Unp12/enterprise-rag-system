@@ -1,0 +1,27 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      # This ensures your uploaded PDFs and Vector DB persist even if Docker restarts
+      - ./backend/uploaded_docs:/app/uploaded_docs
+      - ./backend/chroma_db:/app/chroma_db
+    extra_hosts:
+      # Explicitly allows the container to talk to Windows host for Ollama
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      # Maps your local port 5173 to the container's Nginx port 80
+      - "5173:80"
+    depends_on:
+      - backend
